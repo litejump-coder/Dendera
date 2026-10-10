@@ -17,6 +17,18 @@ The cage is two parallel rings of seven spheres. Each sphere is joined only to i
 | `build_sketch_cage.py` | Rebuilds the whole scene from scratch in Blender |
 | `renders/sketch_cage.png` | 1080 × 1920 render |
 
+## Print-ready version
+
+The `print/` folder holds a version made for 3D printing. It is a single watertight solid, about 115 × 112 × 59 mm. It has two changes from the model above: the struts are 3 mm thick, and each bottom sphere has a flat foot.
+
+| File | What it's for |
+| --- | --- |
+| `print/dendera_print.3mf` | Opens directly in Bambu Studio and other slicers |
+| `print/dendera_print.stl` | The same solid as an STL |
+| `print/build_print_mesh.py` | Rebuilds the print solid (`pip install manifold3d trimesh`) |
+
+On a Bambu Lab P1S, slicing with tree supports and a 5 mm outer brim gives about 2 h 41 min and 51 g of PLA.
+
 ## Dimensions
 
 At scene scale, 1 unit = 1 m.
